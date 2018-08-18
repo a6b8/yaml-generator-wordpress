@@ -1,5 +1,5 @@
 # Visual YAML Generator for creating a Wordpress Stack
-This **Visual Generator** create a `docker-compose.yml`, `rancher-compose.yml` and a `secrets` file. It helps to setup fast and secure a Wordpress Stack.
+This **Visual Generator** create a `docker-compose.yml`, `rancher-compose.yml` and a `secrets.txt` file. It helps to setup fast and secure a Wordpress Stack.
 
 ## The Generator uses 3 diffrent Docker Images:
 - [x] Wordpress | [github.com](https://github.com/docker-library/wordpress) | [hub.docker.com](https://hub.docker.com/_/wordpress/)
