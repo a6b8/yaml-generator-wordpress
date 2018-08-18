@@ -2,14 +2,15 @@
 This **Visual Generator** create a `docker-compose.yml`, `rancher-compose.yml` and a `secrets.txt` file. It helps to setup fast and secure a Wordpress Stack.
 
 ## The Generator uses 3 diffrent Docker Images:
-- [x] Wordpress | [github.com](https://github.com/docker-library/wordpress) | [hub.docker.com](https://hub.docker.com/_/wordpress/)
-- [x] MySql | [github.com](https://github.com/docker-library/mysql) | [hub.docker.com](https://hub.docker.com/_/mysql/)
-- [x] PhpMyAdmin | [github.com](https://github.com/phpmyadmin/docker) | [hub.docker.com](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
+- [x] Wordpress (Expose Port 80) | [github.com](https://github.com/docker-library/wordpress) | [hub.docker.com](https://hub.docker.com/_/wordpress/)
+- [x] MySql (Expose Port 3306)| [github.com](https://github.com/docker-library/mysql) | [hub.docker.com](https://hub.docker.com/_/mysql/)
+- [x] PhpMyAdmin (Expose Port 80) | [github.com](https://github.com/phpmyadmin/docker) | [hub.docker.com](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
 
 ## Features
 - [x] Create Passwords, Names & internal Links
 - [x] Ready for Production, with the secret feature
 - [x] Use no "latest" tags by default for better version control.
+- [x] No Public Ports as Default use the internal DNS (image_name:port)
 
 ## Libraries
 - [x] P5js - Html Dom
