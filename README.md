@@ -14,7 +14,7 @@ This **Visual Generator** create a `docker-compose.yml`, `rancher-compose.yml` a
 ## Libraries
 - [x] P5js - Html Dom
 - [x] JSZip - Creates a Zip Files
-- [x] FileServer.js - Helps to Download to yaml files
+- [x] FileServer.js - Helps download the yaml files
 
 ## Quickstart
 Visual Generator : [a6b8/yaml-generator-loadbalancer](http://htmlpreview.github.io/?https://github.com/a6b8/yaml-generator-wordpress/blob/master/index.html)
