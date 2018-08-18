@@ -182,8 +182,9 @@ services:`
 
 function create_secrets_file(secrets) {
 	var result = ""
+
 	for(var i = 0; i < secrets.length; i++) {
-		result += secrets["secret"] + "-" + secrets["value"] + "\n"
+		result += secrets[i]["secret"] + ", " + secrets[i]["value"] + "\n"
 	}
 	return result
 }
@@ -424,12 +425,16 @@ function event_download() {
 			"name" : "docker-compose.yml",
 			"content" : hash["yamls"][1]["__txt"]
 		},
+		"secrets" : {
+			"name" : "secrets.txt",
+			"content" : hash["yamls"][2]["__txt"]
+		}
 	}
 
 	var zip = new JSZip();
 	zip.file(vals["rancher"]["name"], vals["rancher"]["content"]);
 	zip.file(vals["docker"]["name"], vals["docker"]["content"]);
-
+	zip.file(vals["secrets"]["name"], vals["secrets"]["content"]);
 	//var img = zip.folder("docker-compose");
 	zip.generateAsync({type:"blob"}).then(function(content) {
 	    // see FileSaver.js
